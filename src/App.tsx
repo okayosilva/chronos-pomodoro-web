@@ -4,7 +4,7 @@ import './styles/index.css';
 export function App() {
   return (
     <div>
-      <Heading />
+      <Heading>Hello World</Heading>
     </div>
   );
 }
