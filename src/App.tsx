@@ -1,9 +1,10 @@
+import { Heading } from './components/heading';
 import './styles/index.css';
 
 export function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Heading />
     </div>
   );
 }
