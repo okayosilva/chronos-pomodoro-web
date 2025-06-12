@@ -1,10 +1,18 @@
-import { Heading } from './components/heading';
+import { Container } from './components/container';
+import { Logo } from './components/logo';
+import { Menu } from './components/menu';
 import './styles/index.css';
 
 export function App() {
   return (
-    <div>
-      <Heading>Hello World</Heading>
-    </div>
+    <>
+      <Container>
+        <Logo />
+      </Container>
+
+      <Container>
+        <Menu />
+      </Container>
+    </>
   );
 }

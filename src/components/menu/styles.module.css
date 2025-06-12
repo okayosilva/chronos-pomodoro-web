@@ -1,0 +1,34 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.menuLink {
+  max-width: 6.8rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+
+  background-color: var(--neutral-700);
+  transition: all 0.2s ease-in-out;
+  color: var(--neutral-100);
+}
+
+.menuLink:hover {
+  background-color: var(--warning);
+  color: var(--neutral-900);
+}
+
+.menuLinkLabel {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
