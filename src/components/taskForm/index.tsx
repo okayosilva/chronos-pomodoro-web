@@ -1,5 +1,6 @@
 import plusIcon from '../../assets/plus-icon.svg';
 import { Button } from '../button';
+import { Cycles } from '../cycles';
 import { Input } from '../input';
 import styles from './styles.module.css';
 
@@ -11,15 +12,18 @@ export function TaskForm() {
           <h2>Tarefas</h2>
           <p>Crie tarefas e organize sua rotina em um só lugar.</p>
         </div>
-        <form action='' className={styles.taskFormForm}>
-          <Input type='text' placeholder='Adicione uma nova tarefa' />
-          <Button type='submit'>
-            <img
-              src={plusIcon}
-              alt='Adicionar'
-              className={styles.taskFormButtonIcon}
-            />
-          </Button>
+        <form action='' className={styles.taskFormFormContainer}>
+          <div className={styles.taskFormFormContent}>
+            <Input type='text' placeholder='Adicione uma nova tarefa' />
+            <Button type='submit'>
+              <img
+                src={plusIcon}
+                alt='Adicionar'
+                className={styles.taskFormButtonIcon}
+              />
+            </Button>
+          </div>
+          <Cycles />
         </form>
       </div>
     </div>

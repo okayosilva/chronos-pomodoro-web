@@ -1,0 +1,85 @@
+.cyclesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cyclesHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--neutral-400);
+  }
+}
+
+.cyclesContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  height: 2.8rem;
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+
+  background-color: var(--neutral-900);
+}
+
+.workCycle {
+  background-color: var(--warning);
+}
+
+.shortBreakCycle {
+  background-color: var(--primary);
+}
+
+.longBreakCycle {
+  background-color: var(--info);
+}
+
+/* DEFININDO A ANIMAÇÃO PING */
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* CONTAINER DO DOT - Define o tamanho base */
+.cyclesDotContainer {
+  position: relative;
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* BOLINHA QUE FAZ PING (atrás) */
+.cyclesDotPing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.75;
+
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* BOLINHA FIXA (na frente) */
+.cyclesDotStatic {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  z-index: 1;
+}
