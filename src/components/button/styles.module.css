@@ -2,19 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 0.8rem;
 
-  background-color: var(--warning);
-  color: var(--text-over-warning);
   font-size: 1.2rem;
 
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 1.2rem;
 
   border-radius: 0.8rem;
   border: none;
+  box-shadow: none;
+  outline: none;
   cursor: pointer;
 
-  outline: none;
   font-weight: 700;
   line-height: 1.4;
 
@@ -24,5 +24,23 @@
     filter: brightness(0.9);
     transform: scale(1.03);
   }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
+.default {
+  background-color: var(--warning);
+  color: var(--text-over-warning);
+}
+
+.inProgress {
+  background-color: var(--error);
+  color: var(--text-over-error);
+}

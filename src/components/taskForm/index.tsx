@@ -1,7 +1,8 @@
-import plusIcon from '../../assets/plus-icon.svg';
+import { PlusIcon } from 'lucide-react';
 import { Button } from '../button';
 import { Cycles } from '../cycles';
 import { Input } from '../input';
+
 import styles from './styles.module.css';
 
 export function TaskForm() {
@@ -15,13 +16,7 @@ export function TaskForm() {
         <form action='' className={styles.taskFormFormContainer}>
           <div className={styles.taskFormFormContent}>
             <Input type='text' placeholder='Adicione uma nova tarefa' />
-            <Button type='submit'>
-              <img
-                src={plusIcon}
-                alt='Adicionar'
-                className={styles.taskFormButtonIcon}
-              />
-            </Button>
+            <Button type='submit' icon={<PlusIcon size={20} />} />
           </div>
           <Cycles />
         </form>
