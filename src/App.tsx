@@ -1,5 +1,6 @@
 import { Container } from './components/container';
 import { CountDown } from './components/countDown';
+import { Footer } from './components/footer';
 import { Logo } from './components/logo';
 import { Menu } from './components/menu';
 import { TaskForm } from './components/taskForm';
@@ -22,6 +23,10 @@ export function App() {
 
       <Container>
         <TaskForm />
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </div>
   );
