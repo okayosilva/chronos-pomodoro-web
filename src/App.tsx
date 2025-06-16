@@ -2,6 +2,7 @@ import { Container } from './components/container';
 import { CountDown } from './components/countDown';
 import { Logo } from './components/logo';
 import { Menu } from './components/menu';
+import { TaskForm } from './components/taskForm';
 import './styles/index.css';
 
 export function App() {
@@ -17,6 +18,10 @@ export function App() {
 
       <Container>
         <CountDown />
+      </Container>
+
+      <Container>
+        <TaskForm />
       </Container>
     </div>
   );
