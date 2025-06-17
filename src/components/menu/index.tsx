@@ -11,6 +11,11 @@ export function Menu() {
     return storageTheme;
   });
 
+  const nextThemeIcon = {
+    light: <Sun />,
+    dark: <Moon />,
+  };
+
   const handleToggleTheme = () => {
     setCurrentTheme((prevTheme) => {
       const nextTheme = prevTheme === 'light' ? 'dark' : 'light';
@@ -62,7 +67,7 @@ export function Menu() {
         title='Mudar tema'
         aria-label='Mudar tema'
       >
-        {currentTheme === 'light' ? <Sun /> : <Moon />}
+        {nextThemeIcon[currentTheme]}
       </button>
     </nav>
   );
