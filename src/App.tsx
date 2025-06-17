@@ -1,33 +1,10 @@
-import { Container } from './components/container';
-import { CountDown } from './components/countDown';
-import { Footer } from './components/footer';
-import { Logo } from './components/logo';
-import { Menu } from './components/menu';
-import { TaskForm } from './components/taskForm';
+import { Home } from './pages/home';
 import './styles/index.css';
 
 export function App() {
   return (
     <div style={{ margin: '0 2rem 0 2rem' }}>
-      <Container>
-        <Logo />
-      </Container>
-
-      <Container>
-        <Menu />
-      </Container>
-
-      <Container>
-        <CountDown />
-      </Container>
-
-      <Container>
-        <TaskForm />
-      </Container>
-
-      <Container>
-        <Footer />
-      </Container>
+      <Home />
     </div>
   );
 }
